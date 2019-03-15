@@ -7,6 +7,8 @@
 
 		<link rel="stylesheet" type="text/css" href="./styles.css" />
 
+		<link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+
 		<title>Facebook - Login and signup</title>
 	</head>
 	<body>
@@ -15,23 +17,27 @@
 				<div class="left-division">
 					<img src="./assets/logo.png" height="30px" />
 				</div>
-				<div class="right-division flex-right">
-					<div class="input-group flexbox">
-						<div>
-							<label for="username">Email or Phone</label><br />
+				<div class="right-division">
+					<div class="input-group flexbox flex-right top-margin">
+						<div class="input-box-top">
+							<label for="username">Email or Phone</label>
+							<br />
 							<input type="text" name="username" />
 						</div>
-						<div>
-							<label for="password">Password</label><br />
+						<div class="input-box-top">
+							<label for="password">Password</label>
+							<br />
 							<input type="password" name="password" />
 						</div>
-						<div>
-							<button>Log In</button>
+						<div class="input-box-top">
+							<br />
+							<button class="login-button">Log In</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="main-body">
 			<div class="container flexbox">
 				<div class="left-division">
@@ -42,6 +48,7 @@
 						<img src="./assets/world.png" height="200px" />
 					</div>
 				</div>
+
 				<div class="right-division">
 					<h1>Sign-Up</h1>
 					<h3>It is free and will always be free.</h3>
@@ -51,22 +58,83 @@
 						</div>
 						<div>
 							<input type="text" name="surname" placeholder="Surname" />
-                        </div>
-						<br />
-						<div>
+						</div>
+					</div>
+					<div class="input-group flexbox">
+						<div class="big-button">
 							<input
 								type="text"
 								name="mob"
-								placeholder="Mobile number and email"
+								placeholder="Mobile number or email"
 							/>
 						</div>
-						<div>
-							<input type="text" name="newpass" placeholder="New Password" />
-                        </div>
 					</div>
+					<div class="input-group flexbox">
+						<div class="big-button">
+							<input type="text" name="newpass" placeholder="New Password" />
+						</div>
+					</div>
+					<br />
+					<div class="input-group">
+						<label for="birthday" class="birthday">Birthday</label><br /><br />
+						<div>
+							<select class="day">
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+							</select>
+
+							<select class="month">
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+							</select>
+
+							<select class="year">
+								<option value="1998">1998</option>
+								<option value="1999">1999</option>
+								<option value="2000">2000</option>
+								<option value="2001">2001</option>
+							</select>
+						</div>
+					</div>
+					<br /><br />
+					<div class="input-group flexbox">
+						<input type="radio" name="gender" value="male" checked /> Male<br />
+						<input type="radio" name="gender" value="female" /> Female<br />
+					</div>
+					<div>
+						<p>
+							By clicking Sign up, you agree to our terms , data policy, and
+							cookie policy . You will receive SMS notifications from us and you
+							can opt-out at any time.
+						</p>
+					</div>
+					<br />
+					<div>
+						<button class="big-green-button">
+							Sign Up
+						</button>
+					</div>
+					<p>
+						<strong
+							>Create a page for a famous person, band or business .</strong
+						>
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="footer"></div>
+
+		<div class="footer">
+			<div class="container">
+				<p>
+					Hindi English اردو தமிழ் Bengali flag తెలుగు The ಕನ್ನಡ മലയാളം English
+					(UK)
+				</p>
+				<hr />
+			</div>
+		</div>
 	</body>
 </html>

@@ -25,7 +25,7 @@ body {
 }
 
 .flex-right {
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .left-division {
@@ -39,6 +39,27 @@ body {
     /* line-height: 15vh;     */
 }
 
+.top-margin {
+    margin-top: 25px; 
+}
+
+.input-box-top {
+    margin-right: 10px;
+    color: rgb(235, 235, 235);
+}
+
+label {
+    font-size: 12px;
+}
+
+.login-button {
+    background: rgb(74, 110, 182);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}
+
 .main-body .left-division {
     padding: 35px  0px;
 }
@@ -48,9 +69,57 @@ body {
     color: #091e47;
     font-size: 15pt;
     line-height: 19pt;
-    width: 40%;
+    width: 80%;
 }
 
+.main-body input[type="text"] {
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: solid 1px rgba(128, 128, 128, 0.493);
+    border-radius: 5px;
+}
 
-.footer {
+.big-button input[type="text"] {
+    width: 185%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 10px 0 0;
+    border: solid 1px rgba(128, 128, 128, 0.493);
+    border-radius: 5px;
+}
+
+.main-body input[type="radio"]{
+    font-size: 25px;
+}
+
+.main-body p {
+    font-size: 12px;
+    width: 320px;
+    opacity: 0.6
+}
+
+.big-green-button {
+    font-size: 20px;
+    padding: 8px 70px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #97c77b, rgb(83, 114, 65));
+    color: white;
+    border-radius: 5px;
+    border: solid 1px rgba(36, 36, 36, 0.493);
+}
+
+.birthday {
+    font-size: 18px;
+}
+
+select {
+    font-size: 15px;
+}
+
+.footer p{
+    font-size: 12px;
+    opacity: 0.7;
+    word-spacing: 10px;
+    color: #0f3175
 }
