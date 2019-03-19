@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Starting with HTML</title>
+	</head>
+	<body>
+		<div class="main-body">
+			<div class="menu-bar" id="menu-bar">
+				<h1 id="title">Learning JavaScript</h1>
+				<h4>It is the langauge of the web</h4>
+			</div>
+			<div class="content">
+				<h2>List of Langauges</h2>
+				<ol>
+					<li>JavaScript</li>
+					<li>Python</li>
+					<li>Java</li>
+					<li>Dart</li>
+					<li>C++</li>
+					<li>Swift</li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="footer">
+				<div class="sign">
+					<p>DSC BVP</p>
+				</div>
+				<div class="random">
+					DSC BVP rocks!
+				</div>
+				<div id="empty"></div>
+			</div>
+		</div>
+		<script>
+			for (var i = 0; i < 10; i += 1) {
+				var para = document.createElement("p");
+				var text = document.createTextNode(`This is paragraph line ${i}`);
+				para.appendChild(text);
+				document.getElementById("empty").appendChild(para);
+			}
+		</script>
+	</body>
+</html>
