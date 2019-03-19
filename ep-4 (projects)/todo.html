@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>To-Do List</title>
+		<link rel="stylesheet" type="text/css" href="./styles.css" />
+	</head>
+	<body>
+		<div class="main">
+			<h1>Basic To-Do List Application</h1>
+			<div class="card">
+				<input type="text" id="item" />
+				<button id="add" onclick="addItem()">ADD ITEM</button>
+				<br />
+				<p>YOUR TASKS : </p>
+				<ol id="tasks"></ol>
+			</div>
+		</div>
+
+		<script>
+			function addItem() {
+				var newTask = document.getElementById("item").value;
+
+				var newNode = document.createTextNode(newTask);
+
+				var newItem = document.createElement("li");
+
+				newItem.onclick = function() {
+					var tasks = document.getElementById("tasks");
+					tasks.removeChild(this);
+				};
+
+				newItem.appendChild(newNode);
+
+				document.getElementById("tasks").appendChild(newItem);
+
+				document.getElementById("item").value = "";
+			}
+		</script>
+	</body>
+</html>

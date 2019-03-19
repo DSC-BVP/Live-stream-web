@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "Product Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Open Sans"), local("OpenSans"),
+		url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+			format("woff2");
+}
+
+body {
+	font-family: "Product Sans";
+	background: #2bc585;
+	color: white;
+}
+
+.main {
+	width: 60vw;
+	margin: auto;
+	text-align: center;
+}
+
+.card {
+	background: white;
+	padding: 5% 20% 2% 20%;
+	color: rgb(37, 37, 37);
+	font-size: 20pt;
+}
+
+input {
+	font-size: 15pt;
+	padding: 10px 10%;
+}
+
+button {
+	font-size: 15pt;
+	padding: 10px 10%;
+}
+
+ol {
+	text-align: left;
+}
+
+li:hover {
+	text-decoration: line-through;
+	cursor: pointer;
+}
